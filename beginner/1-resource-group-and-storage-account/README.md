@@ -22,7 +22,9 @@ tags = {
         Type = "ResourceGroup"
     }
 ```
-All required arguments can be found i the documentation for the resource being created.
+
+All required arguments can be found in the documentation for the resource being created.
+
 ---
 The block for the storage account follows suit with required fields, but as the storage account will be created within the resource group that will be deployed we can reference information about the resource group to ensure that Terraform will attempt to create the storage account once the resource group is created:
 ```
@@ -39,7 +41,9 @@ resource "azurerm_storage_account" "example" {
   }
 }
 ```
+
 Both the resource name and location will only be output once the resource has been created. This information could be provided manually if it were to be deployed in an already existing resource group but as this is not the case we know that one must be created before the other.
+
 ---
 To deploy these resources `terraform init` will be required to donwload the required providers. Once this is confirmed on-screen `terraform plan` is run to get an overview of what will be created.
 
