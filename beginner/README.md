@@ -19,7 +19,9 @@ secrets.tfvars - This will contain sensitive information that will not be made a
 ```
 
 A Service Principal will also be used to deploy the resources to Azure. The client id and client secret will be stored in the secrets.tfvars file to be referenced by the script.
+
 ---
+
 Creating the Service Principal:
 - Entra ID > App registrations > New registration.
 Name: "sp-terraform"
@@ -41,6 +43,7 @@ Role: Priviledged adminstrator roles > "Contributer" > Next
 Members: Assign access to > User,groups, or service principal > + Select members > "sp-terraform" > Review + assign
 
 The `providers.tf` file will reference the subscription ID, tenant ID, client ID, and client secret. These values will be stored in the `secrets.tfvars` file which will then overwrite their variable name equivelent in the `variables.tf` file before and during the deployment.
+
 ---
 ## Set up providers
 ---
