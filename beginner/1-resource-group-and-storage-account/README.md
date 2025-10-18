@@ -45,7 +45,7 @@ resource "azurerm_storage_account" "example" {
 Both the resource name and location will only be output once the resource has been created. This information could be provided manually if it were to be deployed in an already existing resource group but as this is not the case we know that one must be created before the other.
 
 ---
-To deploy these resources `terraform init` will be required to donwload the required providers. Once this is confirmed on-screen `terraform plan` is run to get an overview of what will be created.
+To deploy these resources `terraform init` will be required to download the required providers. Once this is confirmed on-screen `terraform plan` is run to get an overview of what will be created.
 
 When everything looks fine it is time to use `terraform apply` to deploy the resources. A prompt will appear to request a "yes" to continue.
 
