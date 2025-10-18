@@ -76,4 +76,6 @@ The `features {}` block is used to add advanced options, such as the following f
       recover_soft_deleted         = true
     }
 ```
-For now, this will not be used. The other values mentioned however will be. The values prepended with "var." will call on the `variables.tf` file for their respoective values, but as these are replaced with the values of the `secrets.tfvars` file the values of the latter will ultimately be used.
+For now, this will not be used. The other values mentioned however will be. The values prepended with "var." will call on the `variables.tf` file for their respoective values, but as these are replaced with the values of the `secrets.tfvars` file the values of the latter will ultimately be used. The values needed for these are added to the `secrets.tfvars` file with the same name as what they are given in the `variables.tf` file.
+---
+With this set up now it is time to deploy the resource group and the storage account.

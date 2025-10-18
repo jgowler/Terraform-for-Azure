@@ -18,3 +18,7 @@ variable "service_account_secret" {
     default = ""
     sensitive = true
 }
+variable "resource_group" {
+    type = string
+    description = "The resource group for Terraform projects"  
+}
