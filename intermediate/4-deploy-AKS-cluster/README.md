@@ -32,7 +32,7 @@ default_node_pool {
 ...
 }
 ```
-This will ensure that the cluster will use the deployed VNET and Subnet bu using the `Azure CNI plugin`. If this were not specified the `kubenet` plugin will be used by default and no VNET or subnet would be required for the deployment.
+This will ensure that the cluster will use the deployed VNET and Subnet by using the `Azure CNI plugin`. If this were not specified the `kubenet` plugin will be used by default and no VNET or subnet would be required for the deployment.
 
 ---
 
@@ -48,7 +48,7 @@ The `oms_agent` will deploy the Azure Monitor agent to the cluster nodes and pod
 
 ---
 
-Once the deployment is complete the cluster will be accessible from the cloud shell using hte following commands:
+Once the deployment is complete the cluster will be accessible from the cloud shell using the following commands:
 
 ```
 - Set the cluster subscription
