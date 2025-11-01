@@ -22,7 +22,6 @@ As this is very basic I will be adding some more resources to the deployment to 
 ```
 Storage account
 Application insights
-Certificate binding
 Azure Key vault + policies
 Managed SSL Certificate
 Log Analytics Workspace
